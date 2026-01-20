@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:file": "playwright test tests/endToEndFlow.spec.js",
+    "test:tag": "playwright test --grep @testMatch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

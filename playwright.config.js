@@ -15,6 +15,14 @@ import { defineConfig, devices } from '@playwright/test';
 const config = ({
   // testDir: './tests',
   testDir: './tests',
+
+  testMatch: [
+    'tests/endToEndFlow.spec.js'
+  ],
+
+
+
+
   timeout: 40 * 1000,
   expect: {
     timeout: 40 * 1000
