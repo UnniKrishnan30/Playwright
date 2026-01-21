@@ -5,7 +5,8 @@ on:
   pull_request:
     branches: [main, master]
 jobs:
-  test:
+  Plawright_Sample_Framework:
+    name: Playwright E2E Test
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -43,7 +44,7 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
-          
+
         # ✅ Generate Allure HTML report
       - name: Generate Allure Report
         run: |
@@ -59,4 +60,3 @@ jobs:
           path: allure-report/
           if-no-files-found: warn
           retention-days: 30
-

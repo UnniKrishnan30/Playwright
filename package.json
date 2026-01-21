@@ -6,12 +6,9 @@
   "scripts": {
     "test:file": "playwright test tests/endToEndFlow.spec.js",
     "test:tag": "playwright test --grep @testMatch",
-
-    
-  "allure:generate": "allure generate ./allure-results --clean -o ./allure-report",
-  "allure:open": "allure open ./allure-report",
-  "allure:serve": "allure serve ./allure-results"
-
+    "allure:generate": "allure generate ./allure-results --clean -o ./allure-report",
+    "allure:open": "allure open ./allure-report",
+    "allure:serve": "allure serve ./allure-results"
   },
   "keywords": [],
   "author": "",
